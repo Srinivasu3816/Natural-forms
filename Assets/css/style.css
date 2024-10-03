@@ -1,0 +1,358 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header section */
+
+header {
+   overflow: hidden;
+   background-color: #7edf23;
+   padding: 5px;
+   max-width: 1400px;
+}
+.header .links {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   float: left;
+   color:white;
+   text-align: center;
+   padding: 10px 15px;
+   text-decoration: none;
+   font-size: 15px;
+   line-height: 12px;
+   border-radius: 4px;
+}
+.header .mobile {
+   font-size: 15px;
+   font-weight: bold;
+   margin: 5px 5px;
+}
+.mobile span{
+    color:red;
+    font-size: 20px;
+   font-weight: 700;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   padding: 10px;
+   
+}
+
+.header .rightSection {
+   float: right;
+}
+@media screen and (max-width: 750px) {
+   .header .links {
+      float: none;
+      display: inline-block;
+      text-align: left;
+   }
+   .header.rightSection {
+      float: none;
+   }
+}
+@media screen and (max-width: 360px) {
+    header{
+       display: none;
+    }
+    .header .links {
+       
+       display: none;
+      
+    }
+    .header.rightSection {
+       display: none;
+    }
+ }
+ @media screen and (max-width: 750px) {
+    header{
+        display: none;
+    }
+    .header .links {
+       
+       display: none;
+      
+    }
+    .header.rightSection {
+       display: none;
+    }
+ }
+
+ /* navsection */
+
+ nav {
+    overflow: hidden;
+    background-color: #4b7c0b;
+    padding: 20px;
+    max-width: 1400px;
+ }
+ .links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 12px;
+    border-radius: 4px;
+ }
+ nav .logo  {
+    font-size: 20px;
+    font-weight: bold;
+ }
+ 
+ nav .links:hover {
+    background-color: rgb(214, 238, 77);
+    color: rgb(42, 10, 94);
+ }
+ 
+ .rightSection {
+    float: right;
+ }
+ @media screen and (max-width: 750px) {
+    nav .links {
+       float: none;
+       display: block;
+       text-align: left;
+    }
+    .rightSection {
+       float: none;
+    }
+    
+ }
+
+ /* productscards */
+
+ /* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+    background: #ecececdb;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 80px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+
+.card-item p {
+    color: #000;
+    font-size: 20px;
+    margin-top: 28px;
+    text-align: justify;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+}
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+
+.footer {
+    position: absolute;
+    /* top: 10%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 95%;
+    background: #4b7c0b;
+    border-radius: 6px;
+    margin-top: 100px;
+  }
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  .footer-row .footer-col h4 {
+    color: rgb(58, 230, 24);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  .footer-col .link {
+    margin-top: 20px;
+  }
+  .footer-col .link li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .link li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: white;
+    max-width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #82c674 ;
+    caret-color: white;
+    color: #0e0707;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  }
+  .footer-col input::placeholder {
+    color: #0f0e0e;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+  }
+  .footer-col form button:hover {
+    background: #9e9999;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: white;
+  }
+  .footer-col .icons i:hover  {
+    color: #a7a2a2;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
+  }
